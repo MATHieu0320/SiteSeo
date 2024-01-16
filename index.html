@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- geogame faire logo -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>
+      GeoGame - Question de geographie specialisé sur les capitales du monde
+      entier des differents pays , quizz en cliquant sur la reponse en fonction
+      de la question annoncé
+    </title>
+    <meta
+      name="description"
+      content="Apprenez en cliquant sur la reponse qui convient et devenez un maitre de la culture des capitales de tout les pays du monde." />
+    <meta property="og:title" content="GeoGame" />
+    <meta property="og:type" content="./GeoGames (d).png" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg" />
+  </head>
+  <body>
+    <header>
+      <img src="./GeoGames (d).png" alt="Logo GeoGame" />
+
+      <h1>Quizz Capital</h1>
+
+      <h2>Testez Vos savoirs</h2>
+      <h5>Cliquez sur la bonne reponse</h5>
+    </header>
+    <section>
+      <h3 id="question"></h3>
+      <div class="choices">
+        <button id="guess0" class="btn">
+          <p id="choice0"></p>
+        </button>
+
+        <button id="guess1" class="btn">
+          <p id="choice1"></p>
+        </button>
+
+        <button id="guess2" class="btn">
+          <p id="choice2"></p>
+        </button>
+
+        <button id="guess3" class="btn">
+          <p id="choice3"></p>
+        </button>
+      </div>
+      <p id="progress"></p>
+    </section>
+    <div class="resultat">
+      <h5>Votre reponse est : <span id="yesorno"></span></h5>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
