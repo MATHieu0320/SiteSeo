@@ -9,7 +9,7 @@ function prise() {
       /////Question///
       Selection = resultat[Math.floor(Math.random() * 240)];
       Lepays = Selection.translations.fra.common.toString();
-      question.innerHTML = `<li>Quelle est la capitale de ce pays<br> ${Lepays} ? </li>`;
+      question.innerHTML = `<ul><li>Quelle est la capitale de ce pays<br> ${Lepays} ? </li></ul>`;
       // choix/////////
       capital = Selection.capital.toString().toUpperCase();
       random1 = resultat[Math.floor(Math.random() * 240)].capital.toString();
@@ -47,7 +47,7 @@ setTimeout(() => {
   const pageFinal = () => {
     document.querySelector("body").innerHTML = `
 <div class="container">
-      <h1> Quiz terminée !</h1>
+      <h5> Quiz terminée </h5>
        <p id="progress1">Votre score est de ${scoreQuiz}/10</p>
       
        <button id="reloadBtn">Recommencer</button>
