@@ -16,7 +16,7 @@ body {
   width: 80%;
   color: rgb(255, 239, 239);
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 img {
@@ -35,11 +35,7 @@ h1 {
   text-align: right;
   margin-bottom: 5px;
 } */
-h3 {
-  font-size: 2.5rem;
-  padding-top: 70px;
-  color: rgb(0, 18, 51);
-}
+
 h2 {
   font-size: 3rem;
   text-align: center;
@@ -47,10 +43,23 @@ h2 {
   text-transform: uppercase;
   color: rgb(255, 89, 90);
 }
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-top: 70px;
+  color: rgb(0, 18, 51);
+}
 @media screen and (max-width: 984px) {
-  h4,
-  img {
+  img,
+  h1 {
     display: none;
+  }
+  h2 {
+    padding-top: 70px;
   }
 }
 section {
@@ -77,8 +86,7 @@ section {
   .choices {
     width: 80%;
   }
-  H5,
-  h6 {
+  H5 {
     margin-top: 121px;
   }
 }
@@ -107,8 +115,8 @@ button {
   margin-top: 50px;
   text-align: center;
 }
-h5,
-h6 {
+h4,
+h5 {
   font-size: 2rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -117,8 +125,11 @@ h6 {
   .choices {
     height: 350px;
   }
-  h5 {
+  h4 {
     margin-top: 10px;
+  }
+  h5 {
+    margin-top: 176px;
   }
 }
 .container {
